@@ -117,7 +117,9 @@ h2{
 .p-link{
   display:inline-flex;gap:8px;align-self:flex-start;
   font-size:13.5px;font-weight:600;color:var(--text-2);margin-top:16px;
+  transition:gap .25s,color .25s;
 }
+.p-link:hover{gap:13px;color:var(--accent)}
 
 /* ---------- SOBRE MÍ ---------- */
 .about-text{max-width:680px}
