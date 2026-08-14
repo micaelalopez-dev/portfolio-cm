@@ -47,6 +47,8 @@ h1 .grad{
   transition:gap .25s,transform .25s;
 }
 .hero-cta:hover{gap:14px;transform:translateY(-2px)}
+.hero-ctas{display:flex;flex-wrap:wrap;align-items:center;gap:14px;margin-top:30px}
+.hero-ctas .hero-cta{margin-top:0}
 .hero-sticker{
   width:220px;aspect-ratio:4/5;flex:none;position:relative;z-index:1;
   transform:rotate(-6deg);border-radius:20px;overflow:hidden;
