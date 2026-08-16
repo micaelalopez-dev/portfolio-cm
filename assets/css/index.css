@@ -77,26 +77,18 @@ h2{
 .s-title{font-family:var(--font-display);font-weight:500;font-size:25px;line-height:1.2}
 .s-desc{font-size:15px;color:var(--text-2)}
 
-.chip{
-  display:inline-flex;align-items:center;justify-content:center;
-  width:32px;height:32px;border-radius:8px;flex:none;
-  font-family:var(--font-body);font-weight:700;font-size:11px;
-  user-select:none;
-}
-.chip.ig{background:linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);color:#fff}
-.chip.fb{background:#1877F2;color:#fff}
-.chip.yt{background:#FF0000;color:#fff}
-.chip.ga{background:#F9AB00;color:#1B1330}
-.chip.cv{background:#00C4CC;color:#fff}
-.chip.hs{background:#1A1A1A;color:#FF7A00;border:1px solid rgba(255,122,0,.4)}
-.chip.ads{background:var(--accent);color:#fff}
-
 .tools-strip{display:flex;flex-wrap:wrap;gap:12px}
 .tool{
-  display:flex;align-items:center;gap:10px;
-  padding:10px 16px 10px 10px;border:1px solid var(--line);border-radius:999px;
+  display:flex;align-items:center;gap:12px;
+  padding:8px 18px 8px 8px;border:1px solid var(--line);border-radius:999px;
 }
+.tool-logo{
+  height:26px;display:flex;align-items:center;justify-content:center;
+  background:#fff;border-radius:6px;padding:4px 9px;flex:none;
+}
+.tool-logo img{height:100%;width:auto;display:block}
 .tool-name{font-weight:600;font-size:13.5px}
+.tool.sin-logo{padding-left:18px}
 
 /* ---------- PROYECTOS ---------- */
 .projects{
