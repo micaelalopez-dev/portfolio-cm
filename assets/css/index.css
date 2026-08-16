@@ -83,10 +83,10 @@ h2{
   padding:8px 18px 8px 8px;border:1px solid var(--line);border-radius:999px;
 }
 .tool-logo{
-  width:30px;height:30px;display:flex;align-items:center;justify-content:center;
-  background:#fff;border-radius:8px;padding:5px;flex:none;
+  width:28px;height:28px;display:flex;align-items:center;justify-content:center;flex:none;
 }
 .tool-logo img{width:100%;height:100%;object-fit:contain;display:block}
+.tool-logo img.invertir{filter:invert(1)}
 .tool-name{font-weight:600;font-size:13.5px}
 
 /* ---------- PROYECTOS ---------- */
