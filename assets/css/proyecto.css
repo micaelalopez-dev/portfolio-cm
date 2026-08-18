@@ -50,9 +50,56 @@ h2{
 }
 .texto{color:var(--text-2);max-width:640px;margin-bottom:56px}
 .texto strong{color:var(--text);font-weight:600}
-.hice{list-style:none;max-width:640px;margin-bottom:64px;border-top:1px solid var(--line)}
-.hice li{padding:15px 0;border-bottom:1px solid var(--line);display:flex;gap:14px;font-size:15px}
-.hice li::before{content:'—';color:var(--accent);font-weight:600}
+.hice {
+  border-top: 1px solid var(--line);
+  margin-top: 40px;
+}
+
+.hice-item {
+  display: grid;
+  grid-template-columns: 55px 1.1fr 1.4fr;
+  gap: 16px 30px;
+  align-items: start;
+  padding: 28px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.hice-num {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: var(--accent);
+  padding-top: 5px;
+}
+
+.hice-title {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.hice-desc {
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--text-2);
+  margin: 0;
+}
+
+.hice-desc strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+/* ---------- SECCIONES NUMERADAS (patrón nuevo, ej. Communis) ---------- */
+.project-section{margin-bottom:8px}
+.section-label{
+  font-family:var(--font-ui);font-size:12px;font-weight:600;
+  letter-spacing:.04em;color:var(--accent);margin-bottom:16px;
+}
+.project-intro-grid,.role-heading,.gallery-heading{margin-bottom:36px}
+.project-intro-grid p,.role-heading p,.gallery-heading p{
+  color:var(--text-2);font-size:15px;line-height:1.65;max-width:640px;margin:0;
+}
 .galeria{
   display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
   gap:22px;margin-bottom:64px;

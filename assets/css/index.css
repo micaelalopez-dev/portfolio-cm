@@ -1,8 +1,22 @@
 /* ============================================
    INDEX — portfolio CM (Community Manager)
    ============================================ */
-
+:root {
+  --font-display: "quiche-sans", sans-serif;
+}
 /* ---------- HERO ---------- */
+.quiche-italic {
+  font-family: "quiche-sans", sans-serif;
+font-weight: 400;
+font-style: italic;
+}
+.quiche-black-italic {
+  font-family: "quiche-sans", sans-serif;
+  font-style: italic;
+  font-weight: 900;
+}
+
+
 header{
   max-width:var(--maxw);margin:0 auto;position:relative;
   min-height:calc(80vh - 68px);
@@ -57,6 +71,11 @@ h1 .grad{
 }
 .hero-sticker img{width:100%;height:100%;object-fit:cover;display:block}
 
+.italic-white {
+  font-style: italic;
+  color: #fff;
+}
+
 /* ---------- SECCIONES ---------- */
 section{max-width:var(--maxw);margin:0 auto;padding:100px 28px}
 .sec-head{margin-bottom:56px}
@@ -89,6 +108,12 @@ h2{
 .tool-logo img.invertir{filter:invert(1)}
 .tool-name{font-weight:600;font-size:13.5px}
 
+#que-hago + section {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+  min-height: auto !important;
+}
+
 /* ---------- PROYECTOS ---------- */
 .projects{
   display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));
@@ -115,9 +140,96 @@ h2{
 .p-link:hover{gap:13px;color:var(--accent)}
 
 /* ---------- SOBRE MÍ ---------- */
-.about-text{max-width:680px}
-.about-text p{color:var(--text-2);font-size:15.5px}
-.about-text p strong{color:var(--text);font-weight:600}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  align-items: center;
+}
+
+.about-text {
+  max-width: 650px;
+}
+
+.about-text p {
+  color: var(--text-2);
+  font-size: 15.5px;
+  line-height: 1.8;
+  margin-bottom: 28px;
+}
+
+.about-text p strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.about-closing {
+  margin-top: 40px;
+}
+
+.about-highlight {
+  position: relative;
+  min-height: 430px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-visual {
+  position: relative;
+  min-height: 520px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* espacios de prueba */
+.about-card {
+  position: absolute;
+  border: 1px dashed rgba(180, 140, 230, .55);
+  background: rgba(145, 102, 190, .035);
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-card::after {
+  content: "imagen / recurso";
+  font-family: var(--font-ui);
+  font-size: 12px;
+  color: var(--accent);
+  opacity: .7;
+}
+
+/* imagen principal */
+.card-main {
+  width: 300px;
+  height: 370px;
+  transform: rotate(-4deg);
+  z-index: 2;
+}
+
+/* imagen secundaria */
+.card-small {
+  width: 190px;
+  height: 230px;
+  right: 20px;
+  bottom: 35px;
+  transform: rotate(5deg);
+  z-index: 3;
+}
+
+/* pequeño recurso gráfico */
+.card-detail {
+  width: 130px;
+  height: 100px;
+  left: 20px;
+  bottom: 30px;
+  transform: rotate(-7deg);
+  z-index: 4;
+}
 
 /* ---------- CONTACTO ---------- */
 #contacto h2{margin-bottom:18px}
